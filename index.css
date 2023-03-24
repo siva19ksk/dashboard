@@ -6,7 +6,6 @@
 }
 .div-header{
     text-align: right;
-
 }
 .header-ul li{
     list-style-type: none;
@@ -18,6 +17,12 @@
     width:2rem;
     border-radius:70%;
 }
+@media only screen and (max-width: 500px) {
+    *{
+        font-size: 5px;
+    }
+}
+
 .header-ul li i{
 font-size: 3vh;
 }
@@ -40,11 +45,12 @@ font-size: 3vh;
     padding: 1em;
     border: 1px solid gray;
     background-color: rgb(41, 124, 117);
-    height: auto;
+    height: 100vh;
 }
 .right-container{
     float: right;
     width:83%;
+    height: 100vh;
 }
 .inside-right-container{
     background-color: aliceblue;
@@ -57,14 +63,29 @@ font-size: 3vh;
     justify-content: space-between;
 }
 .img1{
-    height: 7vh;
+    height: 6vh;
     width:3rem;
 }
+@media only screen and (max-width: 500px) {
+    .img1{
+        height: 4vh;
+        width:3rem;
+    }
+    .radio{
+        font-size:small;
+    }
+}
+
 .image-one-icon i{
 margin-top: 40%;
 font-size: 25px;
 }
-
+@media only screen and (max-width: 500px) {
+    .image-one-icon i{
+        margin-top: 25%;
+        font-size: 15px;
+    }
+}
 
 
 .h5{
@@ -80,7 +101,7 @@ font-size: 25px;
 }
 .left-ui li{
     list-style: none;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 }
 .list-one{
     float: left;
@@ -119,7 +140,7 @@ font-size: 25px;
 .va-right li{
     display: inline-block;
     color: skyblue;
-    padding-right: 1em;
+    padding-right: 0.5em;
 }
 .va-right li a{
     text-decoration: none;
@@ -161,18 +182,20 @@ font-size: 25px;
 
 
 .final-container{
+    display: flex;
+    justify-content: space-between;
     width:100%;
 }
 .left-final{
-    float: left;
+    /* float: left; */
     width:10%;
 }
 .final-right-container-two{
     background-color: white;
 }
 .final-right-container{
-    float: right;
-    width:90%;
+    /* float: right; */
+    width:85%;
 }
 
 .left-ul{
@@ -189,6 +212,22 @@ font-size: 25px;
     font-size:3rem;
     margin-left: 25%;
 }
+
+@media only screen and (max-width: 500px) {
+    .left-ul :nth-child(2){
+        padding-left: 0.5em;
+    }
+    .left-ul li i{
+        font-size:3rem;
+        margin-left: 15%;
+    }
+}
+
+
+
+
+
+
 .circle{
     padding: 1em;
     border: 1px solid skyblue;
@@ -238,6 +277,10 @@ background-color: rgb(247, 241, 157);
     font-size: 1.5em;   
     padding: 0.3em;
 }
+.form-ul-last{
+    display: flex;
+    justify-content: space-between;
+}
 .button{
     text-align: center;
     margin-top: 3%;
@@ -251,9 +294,10 @@ button{
 }
 .table{
     margin-left: 2em;
+    overflow: scroll;
 }
 table{
-    border-collapse: collapse;
+    border-collapse: collapse; 
 }
 thead{
     background-color: skyblue;
@@ -275,4 +319,55 @@ th,td{
 .another-table-one{
     margin-left: 2em;
     margin-top: 3%;
+}
+
+@media only screen and (max-width: 500px) {
+    .another-table-one{
+        margin-left: 0em;
+        margin-top: 3%;
+        overflow: auto;
+    }
+    .table-2{
+        border-collapse: collapse;
+        
+    }
+   select{
+        width: 10em;
+    }
+    .table-two{
+        overflow: scroll;
+    }
+}
+
+.table-span{
+    border: 1px solid gray;
+    padding: 0.7em;
+    background-color: rgb(146, 219, 146);
+    color:white;
+}
+
+
+/*corrections*/
+
+@media only screen and (max-width: 500px) {
+    .tarik{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1em;
+    }
+    .second-divv-whole{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .inside-tarik-tw0 input{
+        width: 13em;
+        height: 3vh;
+    }
+    .inside-tarik{
+        padding-right: 2em;
+    }
+    .for-mbl{
+        display: block;
+    }
 }

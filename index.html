@@ -263,13 +263,14 @@
 
                             
                             <div class="final-second-div" style="padding-left: 7rem;">
-                                <span class="div-label-one">
+   
+                                 <span class="div-label-one">
                                     <label for="radio">Pengecualian Penuh</label>
-                                    <input type="radio" name="radio"/>
+                                    <input type="radio" class="radio" name="radio"/>
                                     <label for="radio">YA</label>
                                 </span>
                                 <span class="div-label-two" style="padding-left: 2rem;">
-                                    <input type="radio" name="tidak" checked/>
+                                    <input type="radio" name="tidak"class="radio"  checked/>
                                     <label for="tidak">tidak</label>
                                 </span>
                             </div>
@@ -292,10 +293,10 @@
                                 </div>
 
                                 <div class="form">
-                                    <ul class="form-ul">
+                                    <ul class="form-ul-last">
                                         <li>Keputusan Mesyuarat</li>
-                                        <li><input type="radio" /><span style="padding-left: 1em;">Ya, Setuju Laksana Makmal</span></li>
-                                        <li><input type="radio" /><span style="padding-left: 1em;">Tidak, Mesyuarat Pra Makmal Seterusnya</span></li>
+                                        <li><input type="radio" /><span >Ya, Setuju Laksana Makmal</span></li>
+                                        <li><input type="radio" /><span >Tidak, Mesyuarat Pra Makmal Seterusnya</span></li>
                                     </ul>
                                 </div>
                                 <div class="button">
@@ -303,7 +304,7 @@
                                 </div>
                             </div>
                         </div>
-
+                         <div>
                         <div class="table-container">
                             <div class="table">
                                 <table>
@@ -338,13 +339,63 @@
                                 </table>
                             </div>
                         </div>
+                    </div>
 
                         <h3 style="margin-left: 2em; margin-top: 3%;">Butiran Makmal</h3>
                         <hr style="margin-top: 2%;">
 
                         <div class="divv-whole">
+                            <div class="for-mbl">
+                            <div class="second-divv-whole">
+                                <div class="left-second-whole">
+                                    <div class="tarik">
+                                        <div class="inside-tarik">
+                                            <p>Tarikh Cadangan <br>Pra Makmal</p>
+                                        </div>
+                                        <div class="inside-tarik-tw0">
+                                            <input type="date" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="tarik">
+                                        <div class="inside-tarik">
+                                            <p>Tarikh Makmal Sebenar</p>
+                                        </div>
+                                        <div class="inside-tarik-tw0">
+                                            <input type="date" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="tarik">
+                                        <div class="inside-tarik">
+                                            <p>Tahun Perlaksanaan<br>Pra Makmal</p>
+                                        </div>
+                                        <div class="inside-tarik-tw0">
+                                            <input type="test" placeholder="YYY" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-second-whole">
+                                    <div class="tarik">
+                                        <div class="inside-tarik">
+                                            <p>Lokasi Makmal</p>
+                                        </div>
+                                        <div class="inside-tarik-tw0">
+                                            <input type="text" placeholder="JPS Negeri" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="tarik">
+                                        <div class="inside-tarik">
+                                            <p>Tarikh Lawatan Tapak</p>
+                                        </div>
+                                        <div class="inside-tarik-tw0">
+                                            <input type="date" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            <div class="form">
+<!-- 
+                          <div class="form">
                                 <ul class="form-ul">
                                     <li><p>Tarikh Cadangan <br>Pra Makmal</p></li>
                                     <li style="padding-left: 1.1em;"><input type="date" disabled> </li>
@@ -366,7 +417,7 @@
                                     <li><input type="text" placeholder="YYY" disabled> </li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
 
                         <h3 style="margin-left: 2em;margin-top: 3%;">Senarai Fasilitator</h3>
 
@@ -386,7 +437,7 @@
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td><select name="x">
+                                        <td><select name="x" class="x">
                                             <option>Abdul Halim Bin Abdul Jalil</option>
                                             <option>Abdul Halim Bin  </option>
                                             <option>Abdul </option>
@@ -426,6 +477,46 @@
                             </table>
                            </div>
                         </div>
+
+                        <div class="button">
+                            <button>Simpan</button>
+                        </div>
+
+                        <div class="table-container">
+                            <div class="table-two">
+                                <table class="table-three">
+                                    <thead>
+                                        <tr>
+                                            <th>Bill</th>
+                                            <th>Tarikh Cadangan Pra Makmal</th>
+                                            <th>Tarikh Pra Makmal</th>
+                                            <th>Surat Jemputan Mesyuarat</th>
+                                            <th>Keputusan Mesyuarat</th>
+                                            <th>Minit Mesyuarat</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><input type="date"/></td>
+                                            <td><input type="date"/></td>
+                                            <td><input type="date"/></td>
+                                            <td>JPS Negeri </td>
+                                            <td><div><span class="table-span">Papar</span></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><input type="date"/></td>
+                                            <td><input type="date"/></td>
+                                            <td><input type="date"/></td>
+                                            <td>JPS Negeri</td>
+                                            <td><div><span class="table-span">Papar</span></div></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
                     </div>
                         </div>
 
